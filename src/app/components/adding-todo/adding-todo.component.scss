@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  gap: 0 20px;
+}
+
+.input {
+  width: 300px;
+  height: 44px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 0;
+}
+
+.button {
+  min-width: 100px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: rgb(8, 32, 165);
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 200ms ease-in;
+
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    cursor: auto;
+    background-color: rgb(189, 189, 189);
+    color: rgb(77 77 77);
+    opacity: 1;
+  }
+}

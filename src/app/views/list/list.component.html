@@ -1,1 +1,7 @@
-<p>list works!</p>
+<h1>Todo manager</h1>
+
+<div class="adding">
+  <app-adding-todo (addTodo)="handleAddTodo($event)"></app-adding-todo>
+</div>
+
+<app-list-todo [listTodo]="listTodo" (deleteTodo)="handleDeleteTodo($event)"></app-list-todo>

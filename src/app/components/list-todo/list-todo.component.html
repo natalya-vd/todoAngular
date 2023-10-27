@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let todo of listTodo; let idx = index" class="item">
+    <div> {{idx}}. </div>
+    <div class="task"> {{todo.task}} </div>
+    <button class="button" type="button" (click)="onDeleteTodo(todo.id)">Delete</button>
+  </li>
+</ul>

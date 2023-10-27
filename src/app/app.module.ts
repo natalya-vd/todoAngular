@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
-import { ListComponent } from './views/list/list.component';
+import { ListModule } from './views/list/list.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ListComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    LayoutModule
+    LayoutModule,
+    ListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
